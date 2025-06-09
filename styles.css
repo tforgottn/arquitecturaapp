@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --phthalo-green: #123524;
+    --phthalo-green-light: #1a4d33;
+    --phthalo-green-dark: #0d2419;
+    --accent-gold: #d4af37;
+    --text-dark: #2d3748;
+    --text-light: #718096;
+    --bg-light: #f7fafc;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.phthalo-primary {
+    background-color: var(--phthalo-green) !important;
+    border-color: var(--phthalo-green) !important;
+}
+
+.phthalo-primary:hover {
+    background-color: var(--phthalo-green-light) !important;
+    border-color: var(--phthalo-green-light) !important;
+}
+
+.text-phthalo {
+    color: var(--phthalo-green) !important;
+}
+
+.border-phthalo {
+    border-color: var(--phthalo-green) !important;
+}
+
+.book-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.book-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.kindle-suggestion {
+    background: linear-gradient(135deg, var(--phthalo-green), var(--phthalo-green-light));
+    color: white;
+}
+
+.wishlist-btn, .cart-btn {
+    transition: all 0.2s ease;
+}
+
+.wishlist-btn:hover, .cart-btn:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--phthalo-green-dark), var(--phthalo-green));
+    color: white;
+    padding: 4rem 0;
+}
